@@ -115,6 +115,9 @@ body {
         border-radius: 10px;
         box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.131);
         padding: 20px;
+        background-color: rgba(97, 147, 212, 0.192);
+        animation: artcont 5s forwards;
+        animation-iteration-count: infinite;
     }
 
     .articles_cont{
@@ -136,6 +139,8 @@ body {
         max-height: 250px;
         overflow: hidden;
         align-items: center;
+        animation-fill-mode: forwards;
+        animation: artimg 5s alternate;
     }
 
     .articles_img img{
@@ -234,4 +239,26 @@ body {
             height: 100%;
         }
 
+    }
+
+    @keyframes artcont {
+        0% {
+            top: 20px;
+        }
+        50% {
+            background-color: rgba(0, 195, 255, 0.781);
+        }
+        100% {
+            background-color: rgba(97, 147, 212, 0.192);
+            top: 260px;
+        }       
+    }
+
+    @keyframes artimg {
+        from {
+            transform: translate(0, 0);
+        }
+        to {
+            transform: translate(0.5%);
+        }
     }
