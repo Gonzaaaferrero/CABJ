@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* body */
+body {
+    background-color: rgb(226, 222, 222);
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    grid-template-areas:
+    "encabezado     encabezado  encabezado"
+    "contenido      contenido   contenido"
+    "footer         footer      fotter";
+    grid-template-columns: repeat(3) 200px;
+    grid-template-rows: repeat(3) 100px;
+}
+
+/* header */
+    header {
+        position: sticky;
+        top: 2;
+        background-color: rgb(44, 63, 240);
+        padding: 20px;
+        z-index: 1;
+        grid-area: encabezado;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .header__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header__content-title {
+        color: rgb(44, 63, 240);
+        background-color: yellow;
+        font-size: 40px;
+    }
+
+    .header__content-navbar {
+        display: flex;
+    }
+
+    .header__content-navbar a {
+        margin: 0 20px;
+        text-align: center;
+        color: rgb(177, 177, 177);
+        font-weight: bold;
+    }
+
+/* Pie de Pagina */
+footer {
+    position: sticky;
+    top: 1;
+    background-color: yellow;
+    padding: 1em 0;
+    grid-area: footer;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.footer__parrafo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
