@@ -1,155 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CABJ</title>
+        <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="./stsss.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CABJ</title>
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-    <div class="cont_general">
-        <!-- Encabezado -->
-        <header class="header">
-            <div class="header__content">
-                <h3>
-                    <a href="./index.html" class="header__content-title">Club Atlético Boca Juniors</a>
-                </h3>
-                <nav>
-                    <ul class="header__content-navbar">
-                        <li><a href="./pages/historia.html">Historia</a></li>
-                        <li><a href="./pages/palmares.html">Palmarés</a></li>
-                        <li><a href="./pages/estadio.html">Estadio Alberto J. Armando</a></li>
-                        <li><a href="./pages/jugadores.html">Jugadores</a></li>
-                        <li><a href="./pages/socios.html">Socios/as</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Contenido Principal -->
-        <main>
-            <!-- Articulos -->
-            <section>
-                <!-- Articulos Historia -->
-                <article class="articles historia">
-                    <div class="articles_cont">
-                        <div class="articles_img">
-                            <img src="./assets/images/historia.png" alt="Historia" width="400">
+    <!-- Body -->
+    <body>
+        <div class="cont_general">
+            <!-- Header -->
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container">
+                    <nav class="navbar">
+                        <a class="navbar-brand">
+                          <img src="./assets/images/logo.ico" width="35" height="30">
+                        </a>
+                      </nav>
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="./index.html">CLUB ATLETICO BOCA JUNIORS</a>
                         </div>
-                        <div class="articles_text">
-                            <div>
-                                <h1>Historia</h1>
-                                <p>El Club Atlético Boca Juniors es una entidad deportiva argentina, con sede en el
-                                    barrio de La
-                                    Boca, Buenos Aires. Fue fundado el 3 de abril de 1905 por seis vecinos adolescentes
-                                    hijos de
-                                    italianos.</p>
-                            </div>
-                        </div>
-                        <div class="articles_link"><a href="./pages/historia.html"> Saber Mas </a></div>
+                    </nav>
+                    <!-- Navbar -->                       
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/estadio.html">Estadio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/jugadores.html">Jugadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/palmares.html">Palmares</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/socios.html">Socios</a>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-
-                <!-- Enlace Palmares -->
-                <article class="articles palmares">
-                    <div class="articles_cont">
-                        <div class="articles_img">
-                            <img src="./assets/images/palmares.png" alt="palmares" width="400">
-                        </div>
-                        <div class="articles_text">
-                            <div>
-                                <h1>Palmarés</h1>
-                                <p>Actualmente poseemos:
-                                <ul>
-                                    <li>50 Torneos Nacionales</li>
-                                    <li>22 Torneos Internacionales</li>
-                                </ul>
-                                </p>
+                </div>
+            </nav>
+            
+            <!-- Contenido Principal -->
+            <main>
+                <!-- Articulos -->
+                <section>
+                    <!-- Articulos Historia -->
+                    <article class="articles historia">
+                        <div class="articles_cont">
+                            <div class="articles_img">
+                                <img src="./assets/images/historia.png" alt="Historia" width="400">
                             </div>
-                        </div>
-                        <div class="articles_link"><a href="./pages/palmares.html"> Saber Mas </a></div>
-                    </div>
-                </article>
-
-                <!-- Enlace Estadio -->
-                <article class="articles estadio">
-                    <div class="articles_cont">
-                        <div class="articles_img">
-                            <img src="./assets/images/estadio.png" alt="estadio" width="800px">
-                        </div>
-                        <div class="articles_text">
-                            <div>
-                                <h1>Estadio</h1>
-
-                                <p>La ubicación de la cancha de Boca es la misma desde 1924: el predio comprendido entre
-                                    las
-                                    calles Brandsen, Del Valle Iberlucea (antes Del Crucero) y las vías y terrenos del
-                                    Ferrocarril General Roca (Casa Amarilla).</p>
+                            <div class="articles_text">
+                                <div>
+                                    <h1>Historia</h1>
+                                    <p>El Club Atlético Boca Juniors es una entidad deportiva argentina, con sede en el
+                                        barrio de La
+                                        Boca, Buenos Aires. Fue fundado el 3 de abril de 1905 por seis vecinos adolescentes
+                                        hijos de
+                                        italianos.</p>
+                                </div>
                             </div>
+                            <div class="articles_link"><a href="./pages/historia.html"> Saber Mas </a></div>
                         </div>
-                        <div class="articles_link"><a href="./pages/jugadores.html"> Saber Mas </a></div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Enlace Jugadores -->
-                <article class="articles jugadores">
-                    <div class="articles_cont">
-                        <div class="articles_img">
-                            <img src="./assets/images/jugadores.png" alt="jugadores" width="800px">
-                        </div>
-                        <div class="articles_text">
-                            <div>
-                                <h1>Jugadores</h1>
-
-                                <p>El Club Atletico Boca Juniors es conocido por ser el equipo donde todos los jugadores
-                                    quieren
-                                    jugar alguna vez en su vida. Por este club pasaron grandes jugadores como Juan Roman
-                                    Riquelme, Carlos Tevez, Diego Armando Maradona y donde dirigió Carlos Bianchi.</p>
+                    <!-- Enlace Palmares -->
+                    <article class="articles palmares">
+                        <div class="articles_cont">
+                            <div class="articles_img">
+                                <img src="./assets/images/palmares.png" alt="palmares" width="400">
                             </div>
-                        </div>
-                        <div class="articles_link"><a href="./pages/jugadores.html"> Saber Mas </a></div>
-                    </div>
-                </article>
-
-                <!-- Enlace Socios/as -->
-                <article class="articles socios">
-                    <div class="articles_cont">
-                        <div class="articles_img">
-                            <img src="./assets/images/socios.png" alt="socios" width="800px">
-                        </div>
-                        <div class="articles_text">
-                            <div>
-                                <h1>Socios/as</h1>
-                                <p>Boca actualmente posee mas de 300.000 socios, siendo el 2º Club con mas socios del
-                                    mundo.
-                                </p>
-                                <p>Actualmente tenemos:</p>
-                                <ul>
-                                    <li>El 45% son socios activos</li>
-                                    <li>El 55% son socios adherentes</li>
-                                </ul>
+                            <div class="articles_text">
+                                <div>
+                                    <h1>Palmarés</h1>
+                                    <p>Actualmente poseemos:
+                                    <ul>
+                                        <li>50 Torneos Nacionales</li>
+                                        <li>22 Torneos Internacionales</li>
+                                    </ul>
+                                    </p>
+                                </div>
                             </div>
+                            <div class="articles_link"><a href="./pages/palmares.html"> Saber Mas </a></div>
                         </div>
-                        <div class="articles_link"><a href="./pages/socios.html"> Quiero ser Socio/a </a></div>
-                    </div>
-                </article>
+                    </article>
+
+                    <!-- Enlace Estadio -->
+                    <article class="articles estadio">
+                        <div class="articles_cont">
+                            <div class="articles_img">
+                                <img src="./assets/images/estadio.png" alt="estadio" width="800px">
+                            </div>
+                            <div class="articles_text">
+                                <div>
+                                    <h1>Estadio</h1>
+
+                                    <p>La ubicación de la cancha de Boca es la misma desde 1924: el predio comprendido entre
+                                        las
+                                        calles Brandsen, Del Valle Iberlucea (antes Del Crucero) y las vías y terrenos del
+                                        Ferrocarril General Roca (Casa Amarilla).</p>
+                                </div>
+                            </div>
+                            <div class="articles_link"><a href="./pages/jugadores.html"> Saber Mas </a></div>
+                        </div>
+                    </article>
+
+                    <!-- Enlace Jugadores -->
+                    <article class="articles jugadores">
+                        <div class="articles_cont">
+                            <div class="articles_img">
+                                <img src="./assets/images/jugadores.png" alt="jugadores" width="800px">
+                            </div>
+                            <div class="articles_text">
+                                <div>
+                                    <h1>Jugadores</h1>
+
+                                    <p>El Club Atletico Boca Juniors es conocido por ser el equipo donde todos los jugadores
+                                        quieren
+                                        jugar alguna vez en su vida. Por este club pasaron grandes jugadores como Juan Roman
+                                        Riquelme, Carlos Tevez, Diego Armando Maradona y donde dirigió Carlos Bianchi.</p>
+                                </div>
+                            </div>
+                            <div class="articles_link"><a href="./pages/jugadores.html"> Saber Mas </a></div>
+                        </div>
+                    </article>
+
+                    <!-- Enlace Socios/as -->
+                    <article class="articles socios">
+                        <div class="articles_cont">
+                            <div class="articles_img">
+                                <img src="./assets/images/socios.png" alt="socios" width="800px">
+                            </div>
+                            <div class="articles_text">
+                                <div>
+                                    <h1>Socios/as</h1>
+                                    <p>Boca actualmente posee mas de 300.000 socios, siendo el 2º Club con mas socios del
+                                        mundo.
+                                    </p>
+                                    <p>Actualmente tenemos:</p>
+                                    <ul>
+                                        <li>El 45% son socios activos</li>
+                                        <li>El 55% son socios adherentes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="articles_link"><a href="./pages/socios.html"> Quiero ser Socio/a </a></div>
+                        </div>
+                    </article>
 
 
-            </section>
-        </main>
-        <!-- Pie de Pagina -->
-        <footer class="footer">
-            <p class="footer__parrafo">© Copyright Club Atlético Boca Juniors</p>
-            <p class="footer__parrafo">Términos y condiciones | Política de Privacidad</p>
-        </footer>
-    </div>
-</body>
-
+                </section>
+            </main>
+            <!-- Pie de Pagina -->
+            <footer class="footer">
+                <p class="footer__parrafo">© Copyright Club Atlético Boca Juniors</p>
+                <p class="footer__parrafo">Términos y condiciones | Política de Privacidad</p>
+            </footer>
+        </div>
+    </body>
 </html>
