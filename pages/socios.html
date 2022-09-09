@@ -55,85 +55,90 @@
         </header>
 
     <!-- Contenido Principal -->
-        <main>
-            <!-- Formularios -->
+        <main class="bg-warning">
             <section>
-            <form action="send.php" method="get" enctype="multipart/form-data">
-                <!-- Encabezado -->
-                <h1>SOCIOS/AS</h1>
-                <!-- Parrafo -->
-                <p>Bienvenido al sector de socios y socias. Aca podra registrarse para ser socio/a del club Atletico Boca Juniors.</p>
-                <h4>Para poder registrarse correctamente complete los siguientes datos: </p>       
-                <!-- Textos -->
-                <p>
-                <label for="nombre">Escriba su Nombre:</label> 
-                <input type="text" placeholder="Escriba su nombre" />
-                </p>
-                <p>
-                <label for="apellido">Escriba su Apellido:</label> 
-                <input type="text" placeholder="Escriba su apellido" />
-                </p>
-                <p>
-                <label for="email">Escriba su Email:</label>
-                <input type="email" placeholder="Escriba su email"/>
-                </p>
-                <p>
-                <label for="password">Escriba su Contraseña:</label>
-                <input type="password" placeholder="Escriba su contraseña"/>
-                </p>
-                <p>A continuacion puede escribir un mensaje desde hace cuanto es hincha y cuales son sus expectativas con nosotros:</p>
-                <textarea cols="50" rows="6" placeholder="Escriba su mensaje"></textarea>
-
-                <!-- Menu Desplegable -->
-                <fieldset>
-                    <legend>Seleccione su país</legend>
-                <select>
-                    <option>Argentina</option>
-                    <option>Brasil</option>
-                    <option>Chile</option>
-                    <option>Colombia</option>
-                    <option>Ecuador</option>
-                    <option>Paraguay</option>
-                    <option>Peru</option>
-                    <option>Uruguay</option>
-                </select>
-                
-                <!-- Control de Seleccion -->
-                </fieldset>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Socio" />
-                <label for="socio">Socio Mayor</label>
-                </p>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Socia" />
-                <label for="socia">Socia Mayor</label>
-                </p>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Sociomenor" />
-                <label for="sociomenor">Socio Menor</label>
-                </p>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Sociamenor" />
-                <label for="socia">Socia Menor</label>
-                </p>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Sociobebe" />
-                <label for="sociobebe">Socio Bebe</label>
-                </p>
-                <p>
-                <input type="radio" name="Tipodesocio" id="Sociabebe" />
-                <label for="sociabebe">Socia Bebe</label>
-                </p>
-                <!-- Casilla de selecccion -->
-                <hr/>
-                <input type="checkbox" id="terminos">
-                <label for="terminos">Aceptar términos y condiciones</label>
-                <hr/>
-                <!-- Botones -->
-                <hr />
-                <button type="submit">Enviar informacion</button>
-                <button type="reset">Limpiar formulario</button>   
-            </form>
+                <div class="container text-center">
+                    <form action="send.php" method="get" enctype="multipart/form-data"></form>
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="socios/as">
+                                <h1>SOCIOS/AS</h1>
+                                <h4>Bienvenido al sector de socios y socias. Aca podra registrarse para ser socio/a del club Atletico Boca Juniors.</h4>
+                                <p>Para poder registrarse correctamente complete los siguientes datos: </p>
+                                <p>
+                                    <label for="nombre">Escriba su Nombre:</label> 
+                                    <input type="text" placeholder="Escriba su nombre" />
+                                </p>
+                                <p>
+                                    <label for="apellido">Escriba su Apellido:</label> 
+                                    <input type="text" placeholder="Escriba su apellido" />
+                                </p>
+                                <p>
+                                    <label for="email">Escriba su Email:</label>
+                                    <input type="email" placeholder="Escriba su email"/>
+                                </p>
+                                <p>
+                                    <label for="password">Escriba su Contraseña:</label>
+                                    <input type="password" placeholder="Escriba su contraseña"/>
+                                </p> 
+                            </div>
+                            <div class="campo">
+                                <p>A continuacion puede escribir un mensaje desde hace cuanto es hincha y cuales son sus expectativas con nosotros:</p>
+                                <textarea cols="50" rows="6" placeholder="Escriba su mensaje"></textarea>
+                            </div>
+                            <div class="pais">
+                                <fieldset>
+                                    <legend>Seleccione su país:</legend>
+                                <select>
+                                    <option>Argentina</option>
+                                    <option>Brasil</option>
+                                    <option>Chile</option>
+                                    <option>Colombia</option>
+                                    <option>Ecuador</option>
+                                    <option>Paraguay</option>
+                                    <option>Peru</option>
+                                    <option>Uruguay</option>
+                                </select>
+                            </div>
+                            <div class="tipesocio">
+                                </fieldset>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Socio" />
+                                    <label for="socio">Socio Mayor</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Socia" />
+                                    <label for="socia">Socia Mayor</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Sociomenor" />
+                                    <label for="sociomenor">Socio Menor</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Sociamenor" />
+                                    <label for="socia">Socia Menor</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Sociobebe" />
+                                    <label for="sociobebe">Socio Bebe</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="Tipodesocio" id="Sociabebe" />
+                                    <label for="sociabebe">Socia Bebe</label>
+                                </p>
+                            </div>
+                            <div class="termcond">
+                                <input type="checkbox" id="terminos">
+                                <label for="terminos">Aceptar términos y condiciones</label>
+                                <hr/>
+                            </div>
+                            <div>
+                                <button type="submit">Enviar informacion</button>
+                                <button type="reset">Limpiar formulario</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
             <!-- Pie de Pagina -->
