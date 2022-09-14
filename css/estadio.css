@@ -1,3 +1,24 @@
+ul {
+    list-style: none;
+}
+
+/* Title */
+.navbar-brand-title {
+    font-weight: bold;
+    color: #1435ee;
+    font-size: 20px;
+}
+
+.navbar-brand-title a {
+    position: relative;
+  }
+   
+.navbar-brand:hover {
+    color: #1435ee;
+    font-size: 25px;
+}
+
+/* Navbar link */
 .nav-link {
     color: white;
 }
@@ -13,9 +34,26 @@
     justify-content: space-around;
 }
 
+.navbar a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar li:last-child {
+    border: 1px solid #c8dd0d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar li:active {
+    transform: scale(0.9);
+}
+
+/* Efecto maps */
 .effect {
     text-align: center;
-    transition: border 0.3s;
+    transition: border;
+    position: sticky;
 }
 
 .effect:hover {
