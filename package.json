@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "CABJ",
+  "main": "index.js",
+  "scripts": {
+    ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzaaaferrero/CABJ.git"
+  },
+  "author": "Gonzalo Ferrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzaaaferrero/CABJ/issues"
+  },
+  "homepage": "https://github.com/Gonzaaaferrero/CABJ#readme"
+}
