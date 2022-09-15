@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gonzaaaferrero/CABJ/issues"
   },
-  "homepage": "https://github.com/Gonzaaaferrero/CABJ#readme"
+  "homepage": "https://github.com/Gonzaaaferrero/CABJ#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
 }
