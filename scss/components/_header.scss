@@ -1,0 +1,47 @@
+.navbar {
+    &__brand {
+        &-title {
+            font-weight: bold;
+            color: #000000;
+            font-size: 20px;
+            text-decoration: none;
+
+            &:hover {
+                color: #1435ee;
+                font-size: 25px;
+            }
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+        }
+    }
+    &-collapse {
+        justify-content: right;
+    }
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        li:last-child {
+            border: 1px solid #c8dd0d;
+            border-radius: 10px;
+            padding: 10px;
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+    &-link {
+        color: white;
+    }
+}
