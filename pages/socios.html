@@ -56,7 +56,100 @@
 
     <!-- Contenido Principal -->
         <main class="bg-warning">
-            <section>
+            <div class="container">
+                <form class="form">
+                    
+                    <div class="mb-3 row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="firstname" class="form-label">Nombre Completo:</label>
+                            <input type="text" class="form-control" aria-label="First name">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="lastname" class="form-label">Apellido Completo:</label>
+                            <input type="text" class="form-control" aria-label="Last name">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 row g-4">
+                    <div class="col-12 col-md-4">
+                        <label for="inputAddress" class="form-label">Calle del domicilio:</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="inputAddress" class="form-label">Altura del domicilio:</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <label for="inputAddress" class="form-label">Barrio o Localidad:</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Codigo Postal:</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputState" class="form-label">Provincia o Estado:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccione su provincia o estado...</option>
+                            <option>Buenos Aires</option>
+                            <option>CABA</option>
+                            <option>Cordoba</option>
+                            <option>Mendoza</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputState" class="form-label">Seleccione su Nacionalidad:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccione su Nacionalidad...</option>
+                            <option>Argentino/a</option>
+                            <option>Brasilero/a</option>
+                            <option>Chileno/a</option>
+                            <option>Peruano/a</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electronico:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Mediante el correo electronico informado ingresaras a tu usuario.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inputPassword5" class="form-label">Contraseña:</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Tu contraseña tiene que tener entre 8-20 caracteres, conteniendo letras, numeros y sin espacio, caracteres ni emojis.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="helocategorysoc" class="form-label">Categoria de socio/a:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona la categoria de socio correspondiente...</option>
+                            <option value="1">Socio/a Bebe</option>
+                            <option value="2">Socio/a Menor</option>
+                            <option value="3">Socio/a Mayor</option>
+                            <option value="4">Socio/a Vitalicio</option>
+                      </select>
+                    <div id="helocategorysoc" class="form-text">
+                        Categoria de socios/as:
+                        <br>Socio/a Vitalicio/a: Desde los 65 años en adelante.
+                        <br>Socio/a Mayor: Desde 18 años hasta los 65 años.
+                        <br>Socio/a Menor: Desde los 5 años hasta los 18 años.
+                        <br>Socio/a Bebe: Desde nacimiento hasta los 5 años.
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label form_check-text" for="exampleCheck1">Acepto terminos y condiciones</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Registrarme</button>
+                    </div>                
+                </form>
+
+            <!-- <section>
                 <div class="container text-center">
                     <form action="send.php" method="get" enctype="multipart/form-data"></form>
                     <div class="col-12">
@@ -139,10 +232,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
             <!-- Pie de Pagina -->
-        <footer>
+            <footer>
             <nav class="navbar-expand-lg">
             <div class="card text-center" style="width: 100%">
                 <div class="card-body bg-light">

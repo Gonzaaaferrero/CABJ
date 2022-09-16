@@ -2,6 +2,10 @@ ul {
     list-style: none;
 }
 
+main {
+    padding: 15px;
+}
+
 /* Title */
 .navbar-brand-title {
     font-weight: bold;
