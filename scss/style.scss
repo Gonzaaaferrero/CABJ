@@ -1,6 +1,13 @@
 // components 
+@import './components/variables';
 @import './components/global';
 @import './components/header';
+@import './components/footer';
 
 // pages
 @import './pages/index';
+@import './pages/estadio';
+@import './pages/historia';
+@import './pages/jugadores';
+@import './pages/palmares';
+@import './pages/socios';

@@ -1,0 +1,78 @@
+.footer {
+    background-color: $bgblue;
+    color: $fontlight;
+    padding: 30px 10px;
+  
+    &__content {
+        @extend .container;
+        @include templateGrid(4);
+        text-align: center;
+  
+        h4 {
+            color: $fontdark;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+  
+        &-list {
+            li {
+            margin: 10px 0;
+            }
+            a {
+            color: $fontlight;
+            transition: $transition;
+    
+            &:hover {
+                color: $fontblue;
+                font-weight: bold;
+            }
+            }
+        }
+    }
+
+    &__rrss {
+        @include templateFlex(space-evenly, false);
+        margin-top: 30px;
+    
+        // mapa
+        $iconSocialMedia: (
+          github: green,
+          twitter: #55acee,
+          instagram: #c92d8f,
+          facebook: #2279e4,
+        );
+    
+        // ciclo - bucle
+        @each $nameSocialMedia, $colorIcon in $iconSocialMedia {
+          .rs-#{$nameSocialMedia} {
+            color: $fontlight;
+            font-size: 30px;
+            transition: $transition;
+    
+            &:hover {
+              color: $colorIcon;
+            }
+          }
+        }
+      }
+    
+    &__copy {
+      margin-top: 10px;
+      text-align: center;
+      color: $fontlight;
+    }
+
+    &__text {
+        margin-top: 10px;
+        text-align: center;
+        color: $fontlight;
+    }
+  }
+  
+  @media (max-width: $bpSmall) {
+    .footer__content {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }

@@ -1,7 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
 ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 main {
     padding: 15px;
 }
+
+// extends
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  // mixins
+  @mixin templateGrid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 30px;
+  }
+  
+  @mixin templateFlex($valueJustify, $alignItems) {
+    display: flex;
+    justify-content: $valueJustify;
+  
+    @if ($alignItems == true) {
+      align-items: center;
+    }
+  }
