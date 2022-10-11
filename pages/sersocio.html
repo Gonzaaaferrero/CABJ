@@ -62,39 +62,37 @@
         <main class="bg-warning">
             <div class="container">
                 <form class="form">
-                    
                     <div class="mb-3 row g-3">
                         <div class="col-12 col-md-6">
                             <label for="firstname" class="form-label">Nombre Completo:</label>
-                            <input type="text" class="form-control" aria-label="First name">
+                            <input type="text" class="form-control" aria-label="First name" required>
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="lastname" class="form-label">Apellido Completo:</label>
-                            <input type="text" class="form-control" aria-label="Last name">
+                            <input type="text" class="form-control" aria-label="Last name" required>
                         </div>
                     </div>
-                    
                     <div class="mb-3 row g-4">
                     <div class="col-12 col-md-4">
                         <label for="inputAddress" class="form-label">Calle del domicilio:</label>
-                        <input type="text" class="form-control" id="inputAddress">
+                        <input type="text" class="form-control" id="inputAddress" required>
                     </div>
                     <div class="col-12 col-md-4">
                         <label for="inputAddress" class="form-label">Altura del domicilio:</label>
-                        <input type="text" class="form-control" id="inputAddress">
+                        <input type="text" class="form-control" id="inputAddress" required>
                     </div>
                     <div class="col-12 col-md-4">
                         <label for="inputAddress" class="form-label">Barrio o Localidad:</label>
-                        <input type="text" class="form-control" id="inputAddress">
+                        <input type="text" class="form-control" id="inputAddress" required>
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Codigo Postal:</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control" id="inputZip" required>
                     </div>
                     <div class="col-md-5">
                         <label for="inputState" class="form-label">Provincia o Estado:</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Seleccione su provincia o estado...</option>
+                        <select id="inputState" class="form-select" required>
+                            <option selected disabled>Seleccione su provincia o estado...</option>
                             <option>Buenos Aires</option>
                             <option>CABA</option>
                             <option>Cordoba</option>
@@ -103,8 +101,8 @@
                     </div>
                     <div class="col-md-5">
                         <label for="inputState" class="form-label">Seleccione su Nacionalidad:</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Seleccione su Nacionalidad...</option>
+                        <select id="inputState" class="form-select" required>
+                            <option selected disabled>Seleccione su Nacionalidad...</option>
                             <option>Argentino/a</option>
                             <option>Brasilero/a</option>
                             <option>Chileno/a</option>
@@ -114,13 +112,13 @@
                     
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo electronico:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         <div id="emailHelp" class="form-text">Mediante el correo electronico informado ingresaras a tu usuario.</div>
                     </div>
 
                     <div class="mb-3">
                         <label for="inputPassword5" class="form-label">Contraseña:</label>
-                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
                         <div id="passwordHelpBlock" class="form-text">
                             Tu contraseña tiene que tener entre 8-20 caracteres, conteniendo letras, numeros y sin espacio, caracteres ni emojis.
                         </div>
@@ -128,8 +126,8 @@
                     
                     <div class="mb-3">
                         <label for="helocategorysoc" class="form-label">Categoria de socio/a:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecciona la categoria de socio correspondiente...</option>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected disabled>Selecciona la categoria de socio correspondiente...</option>
                             <option value="1">Socio/a Bebe</option>
                             <option value="2">Socio/a Menor</option>
                             <option value="3">Socio/a Mayor</option>
@@ -147,7 +145,7 @@
                     <div class="mb-3">
                         <a href="./termycond.html" target="_blank">Leer terminos y condiciones</a>
                         <br>
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                         <label class="form-check-label form_check-text" for="exampleCheck1">Acepto terminos y condiciones</label>
                     </div>
                     <div class="text-center">
