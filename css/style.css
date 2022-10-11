@@ -51,6 +51,12 @@ main {
     .navbar-nav li:last-child:active {
       transform: scale(0.9); }
 
+.navbar-link {
+  color: white; }
+
+
+
+  /* Contacto box de socios */
 .contact-box {
   box-sizing: border-box;
   display: block;
@@ -65,9 +71,7 @@ main {
   box-sizing: border-box;
 }
 
-.navbar-link {
-  color: white; }
-
+/* Footer */
 .footer {
   background-color: #0d6efd;
   color: white;
