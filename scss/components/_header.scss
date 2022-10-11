@@ -5,6 +5,7 @@
             color: #000000;
             font-size: 20px;
             text-decoration: none;
+            align-items: center;
 
             &:hover {
                 color: #1435ee;
@@ -17,14 +18,12 @@
             text-decoration: none;
             color: #000000;
         }
-
     }
     &-collapse {
         justify-content: right;
     }
     &-nav {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: space-around;
 
