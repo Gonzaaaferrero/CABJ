@@ -5,6 +5,7 @@
             color: #000000;
             font-size: 20px;
             text-decoration: none;
+            position: block;
 
             &:hover {
                 color: #1435ee;
@@ -15,7 +16,9 @@
         a {
             position: relative;
             text-decoration: none;
+            color: #000000;
         }
+
     }
     &-collapse {
         justify-content: right;
