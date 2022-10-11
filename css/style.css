@@ -51,6 +51,20 @@ main {
     .navbar-nav li:last-child:active {
       transform: scale(0.9); }
 
+.contact-box {
+  box-sizing: border-box;
+  display: block;
+  margin: 100px 0 px;
+  padding: 30px 22px 24px;
+  background-color: #000000;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
 .navbar-link {
   color: white; }
 
